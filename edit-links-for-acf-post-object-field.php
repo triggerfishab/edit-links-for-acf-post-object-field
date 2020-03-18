@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Edit Links for ACF Post Object Field
- * Description: This plugin adds edit links to the posts in the administration of the ACF Post Object Field.
+ * Description: WordPress plugin which adds edit links to the posts in the administration of the ACF Post Object Field.
  * Author: Joi Glifberg, Triggerfish
  * Author URI: https://www.triggerfish.se/
  * Version: 1.0.0

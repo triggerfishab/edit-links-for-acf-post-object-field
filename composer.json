@@ -1,14 +1,10 @@
 {
     "name": "triggerfish/edit-links-for-acf-post-object-field",
+    "description": "WordPress plugin which adds edit links to the posts in the administration of the ACF Post Object Field.",
     "authors": [
         {
             "name": "Joi Glifberg",
             "email": "joi.glifberg@gmail.com"
-        },
-        {
-            "name": "Triggerfish",
-            "email": "info@triggerfish.se",
-            "homepage": "https://www.triggerfish.se/"
         }
     ],
     "type": "wordpress-plugin",
