@@ -1,0 +1,19 @@
+{
+    "name": "triggerfish/edit-links-for-acf-post-object-field",
+    "authors": [
+        {
+            "name": "Joi Glifberg",
+            "email": "joi.glifberg@gmail.com"
+        },
+        {
+            "name": "Triggerfish",
+            "email": "info@triggerfish.se",
+            "homepage": "https://www.triggerfish.se/"
+        }
+    ],
+    "type": "wordpress-plugin",
+    "require": {
+        "php": "^7.0",
+        "composer/installers": "^1.8"
+    }
+}

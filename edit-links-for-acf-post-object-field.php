@@ -8,23 +8,23 @@
  * Version: 1.0.0
  */
 
-add_action( 'admin_footer', function() {
-	?>
-	<script>
-	acf.add_filter('select2_args', function( args, $select ){
-		$select.on( 'select2:selecting', function( e ) {
-			if ( e.params.args.originalEvent.target.classList.contains( 'js-post-object-list-link' ) ) {
-				e.preventDefault();
-			}
-		});
+add_action('admin_footer', function () {
+    ?>
+    <script>
+    acf.add_filter('select2_args', function(args, $select) {
+        $select.on('select2:selecting', function(e) {
+            if (e.params.args.originalEvent.target.classList.contains('js-post-object-list-link')) {
+                e.preventDefault();
+            }
+        });
 
-		return args;
-	});
-	</script>
-	<?php
+        return args;
+    });
+    </script>
+    <?php
 });
 
-add_filter( 'acf/fields/post_object/result', function( $title, $post ) {
-	return sprintf( '%s <a href="%s" class="js-post-object-list-link" style="float: right; margin-left: .5em; margin-right: .5em;">%s</a>', $title, get_edit_post_link( $post ), esc_html__( 'Edit' ) );
-}, 10, 2 );
+add_filter('acf/fields/post_object/result', function ($title, $post): string {
+    return sprintf('%s <a href="%s" class="js-post-object-list-link" style="float: right; margin-left: .5em; margin-right: .5em;">%s</a>', $title, get_edit_post_link($post), esc_html__('Edit'));
+}, 10, 2);
 
