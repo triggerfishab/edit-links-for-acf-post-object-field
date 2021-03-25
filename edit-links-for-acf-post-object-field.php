@@ -11,7 +11,7 @@
 add_action('admin_footer', function () {
     ?>
     <script>
-    acf.add_filter('select2_args', function(args, $select) {
+    typeof acf !== 'undefined' && acf.add_filter('select2_args', function(args, $select) {
         $select.on('select2:selecting', function(e) {
             if (e.params.args.originalEvent.target.classList.contains('js-post-object-list-link')) {
                 e.preventDefault();
